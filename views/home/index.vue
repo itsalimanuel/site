@@ -12,6 +12,7 @@
             Packs</a></p>
           <p>Dreaming up ideas and making them come true is where my passion lies. Working on a wide range of small,
             medium and large-scale projects,I like make everything interactive.</p>
+            <p>Check OPUS Dashboard template on <a href="https://github.com/itsalimanuel/opus">Github</a> - <strong>SUPPORT RTL.</strong></p>
           <pre style="margin-top: 10px;font-size: 18px">more Open source templates on <strong><a href="https://github.com/itsaimanuel">Github</a></strong> soon..</pre>
         </div>
       </div>
