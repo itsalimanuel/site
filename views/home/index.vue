@@ -5,7 +5,7 @@
         <h1>Ali Khalouf</h1>
         <h1>Front-end Developer</h1>
         <div class="--desc">
-          <p>Hey, I am Ali Khalouf, a Front-end Developer and a lover open sources. Working at <a href="https://starzh.cc">StarEx</a>.
+          <p>Hey, I am Ali Khalouf, a Front-end Developer and a lover open sources.Creator of <a href="https://github.com/itsalimanuel/pigeon">Pigeon</a> , Ex- Front-end developer of <a href="https://starzh.cc">StarEx</a>.
           </p>
           <p>Creator of <a href="https://www.npmjs.com/package/arabic-slug">arabicSlug</a> , <a
               href="https://packagist.org/packages/alik/araslug">araslug</a> and <a href="https://github.com/arpacks">Arab
