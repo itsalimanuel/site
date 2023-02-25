@@ -11,6 +11,11 @@ export default defineNuxtConfig({
                     content: 'Hey, I am Ali Khalouf, a Front-end Developer and a lover open sources. Working at StarEx.'
                 },
                 {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content: 'vuejs,vue3,vue,nuxt,nuxtjs,nuxt3,vuejsdeveloper,nuxtjsdeveloper,vuedeveloper,nuxtdeveloper,frontend,frontenddeveloper,javascriptdeveloper,sass,stylus,freelancer,opensourcedeveloper,html,HTML,css,CSS,animation,Animations,gsap,webgl,webGL,cryptodeveloper'
+                },
+                {
                     name: 'og:type',
                     content: 'website',
                 },
@@ -32,7 +37,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'og:description',
-                    content: 'Hey, I am Ali Khalouf, a Front-end Developer and a lover open sources. Working at StarEx.'
+                    content: 'Hey, I am Ali Khalouf, a Front-end Developer and a open sources lover. Working at StarEx.'
                 }
             ],
             link: [
