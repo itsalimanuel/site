@@ -5,15 +5,31 @@
         <h1>Ali Khalouf</h1>
         <h1>Front-end Developer</h1>
         <div class="--desc">
-          <p>Hey, I am Ali Khalouf, a Front-end Developer and a lover open sources.Creator of <a href="https://github.com/itsalimanuel/pigeon">Pigeon</a> , Ex- Front-end developer of <a href="https://starzh.cc">StarEx</a>.
+          <p>
+            Hey, I am Ali Khalouf, a Front-end Developer and a lover open
+            sources.Creator of
+            <a href="https://github.com/itsalimanuel/pigeon">Pigeon</a> , Ex-
+            Front-end developer of <a href="https://starzh.cc">StarEx</a>.
           </p>
-          <p>Creator of <a href="https://www.npmjs.com/package/arabic-slug">arabicSlug</a> , <a
-              href="https://packagist.org/packages/alik/araslug">araslug</a> and <a href="https://github.com/arpacks">Arab
-            Packs</a></p>
-          <p>Dreaming up ideas and making them come true is where my passion lies. Working on a wide range of small,
-            medium and large-scale projects,I like make everything interactive.</p>
-            <p>Check OPUS Dashboard template on <a href="https://github.com/itsalimanuel/opus">Github</a> - <strong>SUPPORT RTL.</strong></p>
-          <pre style="margin-top: 10px;font-size: 18px">more Open source templates on <strong><a href="https://github.com/itsaimanuel">Github</a></strong> soon..</pre>
+          <p>
+            Creator of
+            <a href="https://www.npmjs.com/package/arabic-slug">arabicSlug</a> ,
+            <a href="https://packagist.org/packages/alik/araslug">araslug</a>
+            and <a href="https://github.com/arpacks">Arab Packs</a>
+          </p>
+          <p>
+            Dreaming up ideas and making them come true is where my passion
+            lies. Working on a wide range of small, medium and large-scale
+            projects,I like make everything interactive.
+          </p>
+          <p>
+            Check OPUS Dashboard template on
+            <a href="https://github.com/itsalimanuel/opus">Github</a> -
+            <strong>SUPPORT RTL.</strong>
+          </p>
+          <pre
+            style="margin-top: 10px; font-size: 18px"
+          >more Open source templates on <strong><a href="https://github.com/itsaimanuel">Github</a></strong> soon..</pre>
         </div>
       </div>
     </div>
@@ -24,7 +40,7 @@
       <div class="job-list">
         <div class="--item" v-for="work in worked">
           <div class="--item-icon">
-            <img v-if="work.icon" :src="work.icon" :alt="work.title">
+            <img v-if="work.icon" :src="work.icon" :alt="work.title" />
             <div class="empty-icon" v-else></div>
           </div>
           <div class="--item-title">
@@ -45,6 +61,9 @@
         <h2>Projects:</h2>
       </div>
       <div class="projects-list">
+        <div class="__item">
+          <a href="https://academy.starex.biz/">StarEx Academy</a>
+        </div>
         <div class="__item">
           <a href="https://starzh.cc">StarEx</a>
         </div>
@@ -76,23 +95,28 @@
     </div>
     <div class="--new">
       <div class="container">
-        <p>Fine me on <a href="https://github.com/itsalimanuel">Github</a>, <a
-            href="https://www.awwwards.com/itsali/votes">Awwwards</a>, <a href="https://twitter.com/itsAliKhalouf">Twitter</a>
-          and <a href="https://youtube.com/@itsalikhalouf">Youtube</a>.
+        <p>
+          Fine me on <a href="https://github.com/itsalimanuel">Github</a>,
+          <a href="https://www.awwwards.com/itsali/votes">Awwwards</a>,
+          <a href="https://twitter.com/itsAliKhalouf">Twitter</a> and
+          <a href="https://youtube.com/@itsalikhalouf">Youtube</a>.
         </p>
-        <p>Contact me at <a href="mailto:itskhaloufali@gmail.com">itskhaloufali@gmail.com</a></p>
+        <p>
+          Contact me at
+          <a href="mailto:itskhaloufali@gmail.com">itskhaloufali@gmail.com</a>
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import strexIcon from '@/assets/companies/starEx.png'
-import carbonIcon from '@/assets/companies/carbon.svg'
-import aquaIcon from '@/assets/companies/aqua.png'
-import nexeIcon from '@/assets/companies/nexe.png'
-import sputinkIcon from '@/assets/companies/sputink.png'
-
+import strexIcon from "@/assets/companies/starEx.png";
+import carbonIcon from "@/assets/companies/carbon.svg";
+import aquaIcon from "@/assets/companies/aqua.png";
+import nexeIcon from "@/assets/companies/nexe.png";
+import sputinkIcon from "@/assets/companies/sputink.png";
+// import starExAcademy from "@/assets/companies/academy.svg";
 export default {
   name: "index",
   data() {
@@ -100,38 +124,43 @@ export default {
       worked: [
         {
           icon: strexIcon,
-          title: 'StarEx Cryptocurrency exchange',
-          desc: 'A professional leading digital asset manager, Build a new digital ecology and define a new digital future.'
+          title: "StarEx Cryptocurrency exchange",
+          desc: "A professional leading digital asset manager, Build a new digital ecology and define a new digital future.",
         },
         {
           icon: carbonIcon,
-          title: 'Carbon Mobile, GmbH',
-          desc: 'Carbon was created to accelerate the world\'s transition to sustainable high-performance materials in connected devices.'
+          title: "Carbon Mobile, GmbH",
+          desc: "Carbon was created to accelerate the world's transition to sustainable high-performance materials in connected devices.",
         },
         {
           icon: aquaIcon,
-          title: 'Aqua-Developments',
-          desc: 'Aqua-Developments is a company which creates, manages and promotes website.'
+          title: "Aqua-Developments",
+          desc: "Aqua-Developments is a company which creates, manages and promotes website.",
         },
         {
           icon: nexeIcon,
-          title: 'Nexe Group',
-          desc: 'Mobile products and artificial intelligence for business.'
+          title: "Nexe Group",
+          desc: "Mobile products and artificial intelligence for business.",
         },
         {
           icon: sputinkIcon,
-          title: 'Sputnik group',
-          desc: 'world-class tourism Platform, based in Russia,#Moscow'
+          title: "Sputnik group",
+          desc: "world-class tourism Platform, based in Russia,#Moscow",
         },
+        // {
+        //   icon: starExAcademy,
+        //   title: "StarEx Academy",
+        //   desc: "Industry-leading learning platform, quickly advance from beginner to master",
+        // },
         {
-          icon: '',
-          title: '',
-          desc: ''
-        }
-      ]
-    }
-  }
-}
+          icon: "",
+          title: "",
+          desc: "",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="sass">
@@ -199,6 +228,7 @@ export default {
         flex-direction: column
         justify-content: space-between
         transition: .2s
+        cursor: pointer
 
         &:hover
           border: 1px solid rgba(250, 250, 250, 1)
