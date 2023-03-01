@@ -6,8 +6,7 @@
         <h1>Front-end Developer</h1>
         <div class="--desc">
           <p>
-            Hey, I am Ali Khalouf, a Front-end Developer and a lover open
-            sources.Creator of
+            Hey, I am Ali Khalouf, Front-end Developer and an open source enthusiast.Creator of
             <a href="https://github.com/itsalimanuel/pigeon">Pigeon</a> , Ex-
             Front-end developer of <a href="https://starzh.cc">StarEx</a>.
           </p>
