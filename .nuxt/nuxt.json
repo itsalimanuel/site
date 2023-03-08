@@ -1,9 +1,9 @@
 {
-  "_hash": "Cf3P2uR6NM",
+  "_hash": "nPpJp0wgWe",
   "project": {
-    "rootDir": "C:/Users/itskh/OneDrive/Desktop/nuxt_apps/web"
+    "rootDir": "C:/Users/itskh/OneDrive/Desktop/site"
   },
   "versions": {
-    "nuxt": "3.1.1"
+    "nuxt": "3.2.3"
   }
 }

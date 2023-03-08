@@ -7,8 +7,8 @@ type InjectionType<A extends Plugin> = A extends Plugin<infer T> ? Decorate<T> :
 
 type NuxtAppInjections = 
   InjectionType<typeof import("../components.plugin").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/router").default>
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app/plugins/router").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }

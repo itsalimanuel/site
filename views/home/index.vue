@@ -1,40 +1,54 @@
 <template>
   <div id="home">
-    <div class="intro">
-      <div class="container">
-        <h1>Ali Khalouf</h1>
-        <h1>Front-end Developer</h1>
-        <div class="--desc">
-          <p>
-            Hey, I am Ali Khalouf, Front-end Developer and an open source enthusiast.Creator of
-            <a href="https://github.com/itsalimanuel/pigeon">Pigeon</a> , Ex-
-            Front-end developer of <a href="https://starzh.cc">StarEx</a>.
-          </p>
-          <p>
-            Creator of
-            <a href="https://www.npmjs.com/package/arabic-slug">arabicSlug</a> ,
-            <a href="https://packagist.org/packages/alik/araslug">araslug</a>
-            and <a href="https://github.com/arpacks">Arab Packs</a>
-          </p>
-          <p>
-            Dreaming up ideas and making them come true is where my passion
-            lies. Working on a wide range of small, medium and large-scale
-            projects,I like make everything interactive.
-          </p>
-          <p>
-            Check OPUS Dashboard template on
-            <a href="https://github.com/itsalimanuel/opus">Github</a> -
-            <strong>SUPPORT RTL.</strong>
-          </p>
-          <pre
-            style="margin-top: 10px; font-size: 18px"
-          >more Open source templates on <strong><a href="https://github.com/itsaimanuel">Github</a></strong> soon..</pre>
+    <div class="container">
+      <div class="intro">
+        <div class="intro-info">
+          <h1>Ali Khalouf</h1>
+          <h1>Front-end Developer</h1>
+          <div class="--desc">
+            <p>
+              Hey, I am Ali Khalouf, Front-end Developer and an open source
+              enthusiast. <br />
+              Creator of
+              <a href="https://github.com/itsalimanuel/pigeon">Pigeon</a> ,
+              <a href="https://www.npmjs.com/package/arabic-slug">arabicSlug</a>
+              ,
+              <a href="https://packagist.org/packages/alik/araslug">araslug</a>
+              and <a href="https://github.com/arpacks">Arab Packs</a>
+            </p>
+            <p>
+              Dreaming up ideas and making them come true is where my passion
+              lies. Working on a wide range of small, medium and large-scale
+              projects,I like make everything interactive.
+            </p>
+            <p>
+              Check OPUS Dashboard template on
+              <a href="https://github.com/itsalimanuel/opus">Github</a> -
+              <strong>SUPPORT RTL.</strong>
+            </p>
+            <pre
+              style="margin-top: 10px; font-size: 18px"
+            >more Open source templates on <strong><a href="https://github.com/itsaimanuel">Github</a></strong> soon..</pre>
+          </div>
+        </div>
+        <div class="intro-card" @mousemove="handleMouseMove" id="top">
+          <div class="perspective">
+            <div @click="goToAnimation" class="card">
+              <div class="thumb"></div>
+              <h2 class="card_title1">vuejs</h2>
+              <h2 class="card_title2">nextjs</h2>
+              <h2 class="card_title3">react</h2>
+              <h2 class="card_title4">nuxtjs</h2>
+              <h2 class="card_title5">SASS</h2>
+              <h2 class="card_title6">Tailwind</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="job">
       <div class="job-title">
-        <h2>Worked with:</h2>
+        <h2>I have had professional experience collaborating with::</h2>
       </div>
       <div class="job-list">
         <div class="--item" v-for="work in worked">
@@ -110,11 +124,13 @@
 </template>
 
 <script>
+import gsap from "gsap";
 import strexIcon from "@/assets/companies/starEx.png";
 import carbonIcon from "@/assets/companies/carbon.svg";
 import aquaIcon from "@/assets/companies/aqua.png";
 import nexeIcon from "@/assets/companies/nexe.png";
 import sputinkIcon from "@/assets/companies/sputink.png";
+import choose from "@/assets/companies/choose.svg";
 // import starExAcademy from "@/assets/companies/academy.svg";
 export default {
   name: "index",
@@ -137,6 +153,11 @@ export default {
           desc: "Aqua-Developments is a company which creates, manages and promotes website.",
         },
         {
+          icon: choose,
+          title: "Choose Digital",
+          desc: "Choose Digital is a company which creates, manages and promotes website.",
+        },
+        {
           icon: nexeIcon,
           title: "Nexe Group",
           desc: "Mobile products and artificial intelligence for business.",
@@ -151,13 +172,38 @@ export default {
         //   title: "StarEx Academy",
         //   desc: "Industry-leading learning platform, quickly advance from beginner to master",
         // },
-        {
-          icon: "",
-          title: "",
-          desc: "",
-        },
+        // {
+        //   icon: "",
+        //   title: "",
+        //   desc: "",
+        // },
       ],
     };
+  },
+  methods: {
+    handleMouseMove() {
+      const card = gsap.utils.toArray(".card")[0];
+      const topSection = document.querySelector("#top");
+
+      topSection.addEventListener("mousemove", (event) => {
+        const mouseX = -(window.innerWidth / 2 - event.pageX) / 30;
+        const mouseY = (window.innerHeight / 2 - event.pageY) / 10;
+
+        gsap.to(card, {
+          duration: 0.5,
+          rotationY: mouseX,
+          rotationX: mouseY,
+          ease: "power2.out",
+        });
+      });
+    },
+    goToAnimation() {
+      console.log("clicked");
+      window.location.href = "https://codepen.io/itsalimanuel/pen/PodKEda";
+    },
+  },
+  mounted() {
+    this.handleMouseMove();
   },
 };
 </script>
@@ -168,18 +214,131 @@ export default {
   position: relative
 
   .intro
-    text-align: center
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    gap:10px
+    // text-align: center
+    align-items: center
     padding-top: 100px
     @media (max-width: 1024px)
       margin-top: 30px
+    @media (max-width: 678px)
+      grid-template-columns: 1fr
+      padding-top: 20px
+    &-card
+      cursor: pointer
+      .perspective
+        width: 100%
+        perspective: 1000px
+        .card
+          width: 270px
+          height: 413px
+          margin: auto
+          box-shadow: 0 70px 63px -60px #494848
+          transform-style: preserve-3d
+          transition: transform .05s linear
+          @media (max-width: 678px)
+            margin-top: 40px
+            height:  450px
+            width: 320px
+          .thumb
+            background-image: url('@/assets/44509661.jpg')
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            height: 100%
+            width: 100%
+            border-radius: 15px
+            &::after
+              background: inherit
+              content: ''
+              display: block
+              position: absolute
+              left: -60px
+              top: 40px
+              width: 100%
+              height: 108%
+              z-index: -1
+              filter: blur(55px)
+          &_title1
+            position: absolute
+            top: 5%
+            left: -20px
+            font-size: 18px
+            line-height: 100%
+            border-radius: 4px
+            background: #42b883
+            padding: 5px 10px
+            font-weight: 100
+            transform: translateZ(80px)
+          &_title2
+            position: absolute
+            top: 0
+            line-height: 100%
+            border-radius: 4px
+            padding: 5px 10px
+            background: #000
+            color: #fff
+            right: 0px
+            font-size: 18px
+            font-weight: 100
+            transform: translateZ(80px)
+
+          &_title3
+            position: absolute
+            top: 30%
+            left: 50%
+            padding: 5px 10px
+            line-height: 100%
+            border-radius: 4px
+            color: #61dafb
+            background: #20232a
+            font-size: 18px
+            font-weight: 100
+            transform: translateZ(80px)
+
+          &_title4
+            position: absolute
+            top: 50%
+            padding: 5px 10px
+            left: 5%
+            font-size: 18px
+            line-height: 100%
+            border-radius: 4px
+            background: #18181B
+            color: #00DC82
+            font-weight: 100
+            transform: translateZ(80px)
+          &_title5
+            position: absolute
+            bottom: 0
+            line-height: 100%
+            border-radius: 4px
+            padding: 5px 10px
+            background: #bf4080
+            right: 0px
+            font-size: 18px
+            font-weight: 100
+            transform: translateZ(80px)
+          &_title6
+            position: absolute
+            bottom: 0
+            padding: 5px 10px
+            left: 0px
+            line-height: 100%
+            border-radius: 4px
+            background: #0ea5e9
+            font-size: 18px
+            font-weight: 100
+            transform: translateZ(80px)
 
     h1
-      font-size: 72px
+      font-size: 36px
       line-height: 120%
       @media (max-width: 1024px)
         font-size: 32px
     .--desc
-      margin-top: 50px
+      margin-top: 20px
       @media (max-width: 1024px)
         margin-top: 20px
       p
