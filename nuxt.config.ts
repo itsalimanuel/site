@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         { src: '@/plugins/vercel.ts', mode: 'client' }
     ],
     modules: [
+        '@vite-pwa/nuxt',
         '@nuxt/image-edge',
     ],
-    
 })
