@@ -4,7 +4,7 @@ export default defineNuxtConfig({
         head: {
             title: 'Ali Khalouf',
             meta: [
-                {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 {
                     hid: 'description',
                     name: 'description',
@@ -41,8 +41,12 @@ export default defineNuxtConfig({
                 }
             ],
             link: [
-                {rel: 'icon', type: 'image/x-icon', href: 'logo.png'}
+                { rel: 'icon', type: 'image/x-icon', href: 'logo.png' }
             ]
-        }
+        },
+
     },
+    plugins: [
+        { src: '@/plugins/vercel.ts', mode: 'client' }
+    ]
 })

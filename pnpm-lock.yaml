@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxtjs/pwa': ^3.3.5
+  '@vercel/analytics': ^0.1.11
   gsap: ^3.11.4
   nuxt: ^3.1.0
   sass: ^1.57.1
 
 dependencies:
   '@nuxtjs/pwa': 3.3.5
+  '@vercel/analytics': 0.1.11
   gsap: 3.11.4
   sass: 1.58.3
 
@@ -1608,6 +1610,12 @@ packages:
       unhead: 1.1.21
       vue: 3.2.47
     dev: true
+
+  /@vercel/analytics/0.1.11:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dev: false
 
   /@vercel/nft/0.22.6:
     resolution: {integrity: sha512-gTsFnnT4mGxodr4AUlW3/urY+8JKKB452LwF3m477RFUJTAaDmcz2JqFuInzvdybYIeyIv1sSONEJxsxnbQ5JQ==}

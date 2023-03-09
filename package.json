@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",
+    "@vercel/analytics": "^0.1.11",
     "gsap": "^3.11.4",
     "sass": "^1.57.1"
   }
