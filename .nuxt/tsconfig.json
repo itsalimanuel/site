@@ -61,6 +61,12 @@
       "vue-demi": [
         "node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "#image": [
+        "node_modules/.pnpm/@nuxt+image-edge@1.0.0-27968280.9739e4d/node_modules/@nuxt/image-edge/dist/runtime"
+      ],
+      "#image/*": [
+        "node_modules/.pnpm/@nuxt+image-edge@1.0.0-27968280.9739e4d/node_modules/@nuxt/image-edge/dist/runtime/*"
+      ],
       "#head": [
         "node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/head/runtime"
       ],

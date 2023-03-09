@@ -51,20 +51,70 @@
         <h2>I have had professional experience collaborating with::</h2>
       </div>
       <div class="job-list">
-        <div class="--item" v-for="work in worked">
+        <div class="--item">
           <div class="--item-icon">
-            <img v-if="work.icon" :src="work.icon" :alt="work.title" />
-            <div class="empty-icon" v-else></div>
+            <nuxt-img format="webp" src="/companies/starEx.png" alt="work.title" />
           </div>
           <div class="--item-title">
-            <h4 v-if="work.title">{{ work.title }}</h4>
-            <div class="empty-title" v-else></div>
+            <h2>StarEx Cryptocurrency exchange</h2>
           </div>
           <div class="--item-desc">
-            <p v-if="work.desc">
-              {{ work.desc }}
-            </p>
-            <div class="empty-desc" v-else></div>
+            <p>A professional leading digital asset manager, Build a new digital ecology and define a new digital future.</p>
+          </div>
+        </div>
+        <div class="--item">
+          <div class="--item-icon">
+            <nuxt-img format="webp" src="/companies/carbon.svg" alt="work.title" />
+          </div>
+          <div class="--item-title">
+            <h2>Carbon Mobile, GmbH</h2>
+          </div>
+          <div class="--item-desc">
+            <p>Carbon was created to accelerate the world's transition to sustainable high-performance materials in connected devices.</p>
+          </div>
+        </div>
+        <div class="--item">
+          <div class="--item-icon">
+            <nuxt-img format="webp" src="/companies/aqua.png" alt="work.title" />
+          </div>
+          <div class="--item-title">
+            <h2>Aqua-Developments</h2>
+          </div>
+          <div class="--item-desc">
+            <p>Aqua-Developments is a company which creates, manages and promotes website.</p>
+          </div>
+        </div>
+        <div class="--item">
+          <div class="--item-icon">
+            <nuxt-img format="webp" src="/companies/choose.svg" alt="work.title" />
+          </div>
+          <div class="--item-title">
+            <h2>Choose Digital</h2>
+          </div>
+          <div class="--item-desc">
+            <p>Choose Digital is a company which creates, manages and promotes website.</p>
+          </div>
+        </div>
+        <div class="--item">
+          <div class="--item-icon">
+            <nuxt-img format="webp" src="/companies/nexe.png" alt="work.title" />
+          </div>
+          <div class="--item-title">
+            <h2>Nexe Group</h2>
+          </div>
+          <div class="--item-desc">
+            <p>Mobile products and artificial intelligence for business.</p>
+          </div>
+        </div>
+        <div class="--item">
+          <div class="--item-icon">
+            <nuxt-img format="webp" src="/companies/sputink.png" alt="work.title" />
+          </div>
+          <div class="--item-title">
+            <h2>Sputnik group</h2>
+          </div>
+          <div class="--item-desc">
+            <p>world-class tourism Platform, based in Russia,#Moscow.</p>
           </div>
         </div>
       </div>
@@ -125,61 +175,10 @@
 
 <script>
 import gsap from "gsap";
-import strexIcon from "@/assets/companies/starEx.png";
-import carbonIcon from "@/assets/companies/carbon.svg";
-import aquaIcon from "@/assets/companies/aqua.png";
-import nexeIcon from "@/assets/companies/nexe.png";
-import sputinkIcon from "@/assets/companies/sputink.png";
-import choose from "@/assets/companies/choose.svg";
+
 // import starExAcademy from "@/assets/companies/academy.svg";
 export default {
   name: "index",
-  data() {
-    return {
-      worked: [
-        {
-          icon: strexIcon,
-          title: "StarEx Cryptocurrency exchange",
-          desc: "A professional leading digital asset manager, Build a new digital ecology and define a new digital future.",
-        },
-        {
-          icon: carbonIcon,
-          title: "Carbon Mobile, GmbH",
-          desc: "Carbon was created to accelerate the world's transition to sustainable high-performance materials in connected devices.",
-        },
-        {
-          icon: aquaIcon,
-          title: "Aqua-Developments",
-          desc: "Aqua-Developments is a company which creates, manages and promotes website.",
-        },
-        {
-          icon: choose,
-          title: "Choose Digital",
-          desc: "Choose Digital is a company which creates, manages and promotes website.",
-        },
-        {
-          icon: nexeIcon,
-          title: "Nexe Group",
-          desc: "Mobile products and artificial intelligence for business.",
-        },
-        {
-          icon: sputinkIcon,
-          title: "Sputnik group",
-          desc: "world-class tourism Platform, based in Russia,#Moscow",
-        },
-        // {
-        //   icon: starExAcademy,
-        //   title: "StarEx Academy",
-        //   desc: "Industry-leading learning platform, quickly advance from beginner to master",
-        // },
-        // {
-        //   icon: "",
-        //   title: "",
-        //   desc: "",
-        // },
-      ],
-    };
-  },
   methods: {
     handleMouseMove() {
       const card = gsap.utils.toArray(".card")[0];
@@ -403,7 +402,7 @@ export default {
             height: auto
 
         &-title
-          h4
+          h2
             font-size: 22px
             font-weight: 400
             line-height: 120%

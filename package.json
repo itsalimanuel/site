@@ -12,6 +12,7 @@
     "nuxt": "^3.1.0"
   },
   "dependencies": {
+    "@nuxt/image-edge": "1.0.0-27968280.9739e4d",
     "@nuxtjs/pwa": "^3.3.5",
     "@vercel/analytics": "^0.1.11",
     "gsap": "^3.11.4",

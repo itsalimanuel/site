@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
     app: {
         head: {
+            htmlAttrs: {
+                lang: 'en',
+            },
             title: 'Ali Khalouf',
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -48,5 +51,9 @@ export default defineNuxtConfig({
     },
     plugins: [
         { src: '@/plugins/vercel.ts', mode: 'client' }
-    ]
+    ],
+    modules: [
+        '@nuxt/image-edge',
+    ],
+    
 })

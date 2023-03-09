@@ -82,6 +82,7 @@ declare global {
   const useError: typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useError']
   const useFetch: typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useFetch']
   const useHead: typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useHead']
+  const useImage: typeof import('../../node_modules/.pnpm/@nuxt+image-edge@1.0.0-27968280.9739e4d/node_modules/@nuxt/image-edge/dist/runtime/composables')['useImage']
   const useLazyAsyncData: typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useLazyAsyncData']
   const useLazyFetch: typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useLazyFetch']
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useNuxtApp']
@@ -196,6 +197,7 @@ declare module 'vue' {
     readonly useError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useError']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useFetch']>
     readonly useHead: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useHead']>
+    readonly useImage: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+image-edge@1.0.0-27968280.9739e4d/node_modules/@nuxt/image-edge/dist/runtime/composables')['useImage']>
     readonly useLazyAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useLazyAsyncData']>
     readonly useLazyFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useLazyFetch']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.2.3_sass@1.58.3/node_modules/nuxt/dist/app')['useNuxtApp']>

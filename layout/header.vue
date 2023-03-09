@@ -4,14 +4,18 @@
       <router-link to="/">Ali</router-link>
     </div>
     <div class="header-links">
-      <a href="https://instagram.com/itsalikhalouf" target="_blank">
-        <Instagram :size="size"/>
+      <a
+        aria-hidden="true"
+        href="https://instagram.com/itsalikhalouf"
+        target="_blank"
+      >
+        <Instagram :size="size" />
       </a>
-      <a href="https://github.com/itsalimanuel">
-        <Github :size="size"/>
+      <a aria-hidden="true" target="_blank" href="https://github.com/itsalimanuel">
+        <Github :size="size" />
       </a>
-      <a  href="https://twitter.com/itsalikhalouf">
-        <Twitter :size="size"/>
+      <a aria-hidden="true" target="_blank" href="https://twitter.com/itsalikhalouf">
+        <Twitter :size="size" />
       </a>
     </div>
   </header>
@@ -23,13 +27,13 @@ import Twitter from "~/components/icons/twitter.vue";
 
 export default {
   name: "header",
-  components: {Twitter, Github, Instagram},
+  components: { Twitter, Github, Instagram },
   data() {
     return {
-      size: '22px'
-    }
-  }
-}
+      size: "22px",
+    };
+  },
+};
 </script>
 
 <style scoped lang="sass">
